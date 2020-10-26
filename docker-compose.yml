@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  # Database
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: helloworld
+    ports:
+      - 5432:5432
