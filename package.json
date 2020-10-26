@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.1"
+  },
+  "name": "le-reddite",
+  "version": "1.0.0",
+  "description": "A reddit clone as quickly as possible!!!",
+  "main": "index.js",
+  "repository": "git@github.com:buoyantair/le-reddite.git",
+  "author": "Alice Kile <buoyantair@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx jest",
+    "test:coverage": "npx jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn audit && yarn test",
+      "pre-push": "yarn audit && yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
