@@ -1,4 +1,4 @@
-const configConventional = require('@commitlint/config-conventional');
+const configConventional = require('@commitlint/config-conventional')
 
 module.exports = {
   rules: {
@@ -10,6 +10,6 @@ module.exports = {
         ...configConventional.rules['type-enum'][2]
       ]
     ]
-  },
+  }
 
-};
+}
