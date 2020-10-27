@@ -2,5 +2,7 @@
   "javascript.validate.enable": false,
   "standard.autoFixOnSave": true,
   "standard.engine": "standardx",
-  "standard.usePackageJson": true
+  "standard.usePackageJson": true,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false
 }
